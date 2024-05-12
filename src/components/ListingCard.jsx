@@ -81,13 +81,21 @@ const ListingCard = ({
         >
           {listingPhotoPaths?.map((photo, index) => (
             <div key={index} className="slide">
-              <img
+              {/*  //original//  <img
                 src={`https://dream-nest-backend.onrender.com/${photo?.replace(
                   "public",
                   ""
                 )}`}
                 alt={`photo ${index + 1}`}
+              /> */}
+              <img
+                src={`https://dream-nest-backend.onrender.com/${photo?.replace(
+                  "public",
+                  ""
+                )}`}
+                alt={`Listing ${index + 1}`}
               />
+
               <div
                 className="prev-button"
                 onClick={(e) => {
